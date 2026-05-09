@@ -1,4 +1,4 @@
-import services from "../data/services";
+import services from "../data/Services";
 import ServiceCard from "./ServiceCard";
 
 export default function ServicesSection() {

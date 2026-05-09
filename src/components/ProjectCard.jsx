@@ -13,20 +13,19 @@ export default function ProjectCard({ project }) {
       transition={{ duration: 0.3 }}
       className="block rounded-[30px] overflow-hidden border border-white/10 bg-black/40 cursor-pointer group"
     >
-      {/* Top Section */}
-      <div className="h-60 bg-gradient-to-br from-blue-500/30 to-purple-500/20 flex items-center justify-center text-6xl overflow-hidden">
-        <motion.div
-          whileHover={{
-            scale: 1.1,
-            rotate: 5,
-          }}
-          transition={{ duration: 0.3 }}
-        >
-          💼
-        </motion.div>
+
+      {/* IMAGE */}
+      <div className="h-60 overflow-hidden">
+        <motion.img
+          src={project.image}
+          alt={project.name}
+          whileHover={{ scale: 1.08 }}
+          transition={{ duration: 0.4 }}
+          className="w-full h-full object-cover"
+        />
       </div>
 
-      {/* Content */}
+      {/* CONTENT */}
       <div className="p-7">
         <p className="text-sm text-gray-400">
           {project.category}
@@ -40,6 +39,7 @@ export default function ProjectCard({ project }) {
           Click to view live project →
         </p>
       </div>
+
     </motion.a>
   );
 }
