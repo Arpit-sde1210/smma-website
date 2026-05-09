@@ -20,7 +20,7 @@ const projects = [
   {
     name: "Medsync",
     category: "Website + Marketing",
-    url: "https://arpit-sde1210.github.io/Compo/",
+    url: "https://arpit-sde1210.github.io/1PS-Healthcare/",
     image: project3,
   },
 ];
